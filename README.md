@@ -12,11 +12,13 @@
 
 测试结果（时间单位为秒）：
 
-|             | 图1     | 图2     |
-|-------------|--------|--------|
-| Wine 32bit  | 0\.086 | 1\.207 |
-| Intel i5    | 0\.015 | 0\.187 |
-| WebAssembly | 0\.254 | 0\.397 |
+|                 | 图1    | 图2    |
+|-----------------|--------|--------|
+| Wine 32bit      | 0\.086 | 1\.207 |
+| WebAssembly     | 0\.254 | 0\.397 |
+
+
+在Intel i5 10400的Windows设备上的解码时间分别为: 0.016, 0.187。可以看到运行速度存在一定差距。
 
 
 下面具体的测试过程：
@@ -30,7 +32,7 @@ lophyxp@sancog:/tmp/dbr$ ./BarcodeReader
 latx-x86_64: ./BarcodeReader: requires virtual address space that is in use (omit the -B option or choose a different value)
 ```
 
-不清楚原因，暂时不测试了。
+可以看到系统会用翻译器来运行，但不清楚这里错误的原因，暂时不测试了。
 
 ## Windows x86
 
