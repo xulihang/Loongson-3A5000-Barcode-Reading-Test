@@ -23,9 +23,9 @@
 
 下面具体的测试过程：
 
-## Linux x86
+## Linux x86_64
 
-x86端编译[这个仓库](https://github.com/yushulx/cmake)的Linux二进制文件，并在龙芯上运行，但显示错误：
+x86_64端编译[这个仓库](https://github.com/yushulx/cmake)的Linux二进制文件，并在龙芯上运行，但显示错误：
 
 ```
 lophyxp@sancog:/tmp/dbr$ ./BarcodeReader
