@@ -1,6 +1,6 @@
 龙芯3A5000 二进制翻译与二维码扫描测试
 
-本仓库主要记录了[Dynamsoft Barcode Reader（DBR）](https://www.dynamsoft.com/barcode-reader/overview/)在龙芯3A5000上的运行测试。
+本仓库主要记录了[Dynamsoft Barcode Reader（DBR）](https://www.dynamsoft.com/barcode-reader/overview/)在龙芯3A5000上的运行测试。感谢[子扉](https://tieba.baidu.com/p/7562976585)提供的ssh主机。
 
 龙芯3A5000国产CPU采用自主研发的Loongson架构，支持以软硬结合的方式翻译arm、mips和x86架构的应用。Dynamsoft Barcode Reader是用C++编写的条码扫描SDK，并支持用Javascript、Java、Objective-C、Python等语言进行调用。
 
@@ -23,9 +23,9 @@
 
 下面具体的测试过程：
 
-## Linux x86_64
+## Linux x86-64
 
-x86_64端编译[这个仓库](https://github.com/yushulx/cmake)的Linux二进制文件，并在龙芯上运行，但显示错误：
+x86-64端编译[这个仓库](https://github.com/yushulx/cmake)的Linux二进制文件，并在龙芯上运行，但显示错误：
 
 ```
 lophyxp@sancog:/tmp/dbr$ ./BarcodeReader
@@ -74,6 +74,5 @@ java.lang.UnsatisfiedLinkError: /tmp/dynamsoft/8.8/libDynamsoftBarcodeJNI.so: /t
 ## WebAssembly
 
 DBR的JS版采用WebAssembly编译，可以直接用node运行。
-
 
 
