@@ -2,9 +2,9 @@
 
 本仓库主要记录了[Dynamsoft Barcode Reader（DBR）](https://www.dynamsoft.com/barcode-reader/overview/)在龙芯3A5000上的运行测试。感谢[子扉](https://tieba.baidu.com/p/7562976585)提供的ssh主机。
 
-龙芯3A5000国产CPU采用自主研发的Loongson架构，支持以软硬结合的方式翻译arm、mips和x86架构的应用。Dynamsoft Barcode Reader是用C++编写的条码扫描SDK，并支持用Javascript、Java、Objective-C、Python等语言进行调用。
+龙芯3A5000国产CPU采用自主研发的LoongArch架构，支持以软硬结合的方式翻译arm、mips和x86架构的应用。Dynamsoft Barcode Reader是用C++编写的条码扫描SDK，并支持用Javascript、Java、Objective-C、Python等语言进行调用。
 
-目前DBR还没有Loongson架构的库，这里主要以二进制翻译的形式运行x86的程序，记录解下面两张图分别用的时间。
+目前DBR还没有LoongArch架构的库，这里主要以二进制翻译的形式运行x86的程序，记录解下面两张图分别用的时间。
 
 ![](img/black_qr_code.png)
 
